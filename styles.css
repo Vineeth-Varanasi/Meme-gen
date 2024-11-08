@@ -1,0 +1,117 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  background-color: #1D2326;
+  color: #BFA38A;
+  font-family: monospace;
+  line-height: 1.6; /* Adds readability */
+  display: flex;
+  justify-content: center; /* Centers the main content horizontally */
+  align-items: center;
+  min-height: 100vh; /* Takes full viewport height */
+  margin: 0;
+}
+
+/* Main Container */
+main {
+  display: flex;
+  flex-direction: row;
+  width: 90%; /* Keeps content within viewports */
+  max-width: 1200px; /* Sets a max-width for large screens */
+  gap: 20px; /* Adds spacing between main sections */
+}
+
+/* Image Styling */
+img {
+  border: 1px solid white;
+  border-radius: 5px;
+  max-width: 350px;
+  width: 100%;
+  display: block;
+}
+
+/* Paragraph Styling */
+p {
+  color: #8097A6;
+}
+
+/* Attribution Styling */
+.attribution {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 0.8rem;
+  background-color: #8097A6;
+  padding: 10px;
+  border-radius: 5px;
+  color: #1D2326;
+  box-shadow: 1px 2px 5px 1px rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+/* Link Styling */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Content Area */
+.content {
+  width: 65%;
+  padding: 20px 30px;
+}
+
+.content p {
+  max-width: 80%;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 20px 30px;
+  border-left: 1px dotted #BFA38A;
+  height: 85vh;
+  overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+/* Button Styling */
+button {
+  width: 200px;
+  max-width: 100%;
+  margin: 10px 0;
+  height: 35px;
+  border: 1px solid #BFA38A;
+  background: transparent;
+  color: #BFA38A;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Reveal Button Styling */
+.reveal-btn {
+  border: none;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.reveal-btn:hover {
+  color: white;
+  background-color: transparent;
+}
